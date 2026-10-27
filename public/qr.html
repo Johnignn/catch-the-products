@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="ro"><head><meta charset="UTF-8"><title>QR – Catch the Products</title>
+<style>body{margin:0;font-family:"Segoe UI",Arial,sans-serif;background:#0b1026;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;text-align:center}
+h1{font-size:44px;margin:0 0 6px;background:linear-gradient(90deg,#00d1ff,#a66bff,#c8e63c);-webkit-background-clip:text;color:transparent}
+img{width:min(60vh,80vw);background:#fff;border-radius:20px;padding:12px;margin:18px 0}
+#u{font-size:30px;font-weight:800;color:#ffd23f}p{opacity:.8;font-size:18px}
+button{margin:16px 6px 0;padding:12px 24px;border:0;border-radius:30px;font-size:16px;font-weight:700;color:#fff;background:linear-gradient(135deg,#00d1ff,#7a5cff);cursor:pointer}
+@media print{button,p.tip{display:none}body{background:#fff;color:#000}#u{color:#000}}</style></head><body>
+<h1>🎯 CATCH THE PRODUCTS</h1><p>Scanează cu camera telefonului și scrie-ți numele</p>
+<img id="q" src="/qr.svg" alt="QR"><div id="u"></div>
+<div><button onclick="dl()">⬇️ Descarcă QR (PNG pentru PowerPoint)</button><button onclick="navigator.clipboard.writeText(U).then(()=>alert('Link copiat'))">📋 Copiază link-ul</button></div>
+<p class="tip">Pune PNG-ul pe slide: Inserare → Imagini → acest dispozitiv.</p>
+<script>const U=location.origin+'/';document.getElementById('u').textContent=U;
+function dl(){const i=new Image();i.onload=()=>{const c=document.createElement('canvas');c.width=c.height=1000;const x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,1000,1000);x.drawImage(i,0,0,1000,1000);
+const a=document.createElement('a');a.download='QR_Catch_the_Products.png';a.href=c.toDataURL('image/png');a.click()};i.src='/qr.svg'}</script></body></html>

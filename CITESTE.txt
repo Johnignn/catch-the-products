@@ -1,0 +1,21 @@
+CATCH THE PRODUCTS – pași
+=========================
+A. O SINGURĂ DATĂ (punerea online)
+ 1. github.com -> repository-ul tău -> șterge fișierele vechi -> "Add file" -> "Upload files"
+    -> trage TOT din arhivă: server.js, package.json, CITESTE.txt, folderele public și lib -> Commit changes.
+ 2. render.com -> serviciul tău -> Manual Deploy -> Deploy latest commit -> aștepți "Live" (1-2 min).
+    (Prima dată: New -> Web Service -> repository -> Build: npm install, Start: node server.js, Free.)
+
+B. QR PENTRU PREZENTARE (înainte de meeting)
+ 3. Deschide https://<link>.onrender.com/qr -> "Descarcă QR (PNG)" -> pune-l pe slide în PowerPoint.
+    QR-ul apare automat și pe ecranul de host, deci nu e obligatoriu pe slide.
+
+C. ÎN ZIUA PREZENTĂRII
+ 4. Cu 10 min înainte: https://<link>.onrender.com/host -> parola start2026 -> verifici 🟢 Conectat.
+ 5. În Teams: Share -> Window -> fereastra browserului cu host-ul (⛶ pentru ecran complet).
+ 6. Oamenii scanează QR-ul (telefon) sau intră pe link (laptop) și își scriu numele. Aștepți 1-2 min.
+ 7. Apeși 🏁 START JOC: 10 s reguli -> 20 s produse (+10) -> 10 s surpriză lansări (+30). 💣 = -20.
+ 8. La final: 🏆 Arată câștigătorii (70) -> 📥 Descarcă Excel.
+ 9. Rundă nouă: 🔁 Rundă nouă -> START JOC.
+
+NU deschide fișierele .html cu dublu-click – jocul merge doar de pe link-ul https://...onrender.com
